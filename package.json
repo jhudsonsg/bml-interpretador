@@ -1,0 +1,16 @@
+{
+  "name": "bml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "antlr4 grammars/Bml.g4 -Dlanguage=JavaScript -o src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.10.1"
+  }
+}
