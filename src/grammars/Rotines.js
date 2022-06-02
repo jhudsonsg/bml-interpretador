@@ -1,7 +1,7 @@
 import BmlTableSymbol from './BmlTableSymbol.js';
 import BmlSemanticAnalyzer from './BmlSemanticAnalyzer.js';
 
-import lang from './util/lang/lang.js.js'
+import lang from './util/lang/lang.js'
 
 export default class Rotines {
   constructor() {

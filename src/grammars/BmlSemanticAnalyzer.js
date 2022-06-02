@@ -1,5 +1,5 @@
 import SemanticError from "./erros/SemanticError.js";
-import lang from './util/lang/lang.js.js'
+import lang from './util/lang/lang.js'
 import { isString, isVariable } from './util/is.js';
 
 export default class BmlSemanticAnalyzer {
