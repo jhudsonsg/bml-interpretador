@@ -24,7 +24,6 @@ export default class Rotines {
   }
 
   checkVariableType(expression) {
-    console.log(expression);
     this.bmlSemanticAnalyzer.typeValidWithExpression(this.currentTypeVariable, expression);
   }
 
