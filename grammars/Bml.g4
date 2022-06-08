@@ -12,8 +12,8 @@ programa        :   'inicio' listaComandos 'fim';
 listaComandos   :   comando+;
 comando         :   inicializacao | declaracao | atribuicao;
 
-inicializacao   :   'definir' VARIAVEL TIPO ATRIBUICAO expresao;
-declaracao      :   'definir' VARIAVEL TIPO;
+inicializacao   :   'definir' VARIAVEL TIPO { this.r.checkExistenceOfVariable($VARIAVEL.text, $TIPO.text) } ATRIBUICAO expresao { this.r.checkVariableType($expressao.text) };
+declaracao      :   'definir' VARIAVEL TIPO { this.r.checkExistenceOfVariable($VARIAVEL.text, $TIPO.text) };
 atribuicao      :   VARIAVEL ATRIBUICAO expresao;
 
 expresao        :   termo (OPERADOR termo)*;
