@@ -12,7 +12,7 @@ programa        :   'inicio' listaComandos 'fim';
 listaComandos   :   comando+;
 comando         :   inicializacao | declaracao | atribuicao;
 
-inicializacao   :   'definir' VARIAVEL TIPO { this.r.checkExistenceOfVariable($VARIAVEL.text, $TIPO.text) } ATRIBUICAO expresao { this.r.checkVariableType($expressao.text) };
+inicializacao   :   'definir' VARIAVEL TIPO { this.r.checkExistenceOfVariable($VARIAVEL.text, $TIPO.text) } ATRIBUICAO expresao { this.r.checkVariableType($expresao.text) };
 declaracao      :   'definir' VARIAVEL TIPO { this.r.checkExistenceOfVariable($VARIAVEL.text, $TIPO.text) };
 atribuicao      :   VARIAVEL ATRIBUICAO expresao;
 

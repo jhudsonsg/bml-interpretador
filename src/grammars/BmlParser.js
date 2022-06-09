@@ -169,12 +169,12 @@ export default class BmlParser extends antlr4.Parser {
 	        localctx._VARIAVEL = this.match(BmlParser.VARIAVEL);
 	        this.state = 32;
 	        localctx._TIPO = this.match(BmlParser.TIPO);
-	         this.r.checkExistenceOfVariable((localctx._VARIAVEL===null ? null : localctx._VARIAVEL.text), (localctx._TIPO===null ? null : localctx._TIPO.text)); 
+	         this.r.checkExistenceOfVariable((localctx._VARIAVEL===null ? null : localctx._VARIAVEL.text), (localctx._TIPO===null ? null : localctx._TIPO.text)) 
 	        this.state = 34;
 	        this.match(BmlParser.ATRIBUICAO);
 	        this.state = 35;
 	        localctx._expresao = this.expresao();
-	         this.r.checkVariableType((localctx._expresao===null ? null : this._input.getText(new antlr4.Interval(localctx._expresao.start,localctx._expresao.stop)))); 
+	         this.r.checkVariableType((localctx._expresao===null ? null : this._input.getText(new antlr4.Interval(localctx._expresao.start,localctx._expresao.stop)))) 
 	    } catch (re) {
 	    	if(re instanceof antlr4.error.RecognitionException) {
 		        localctx.exception = re;
